@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haoran Mo | CPD Portfolio (MSc Robotics, UoM)</title>
+  <meta name="description" content="CPD portfolio aligning with coursework requirements: photo, concise bio, skills, career goals & interests, short custom project descriptions with links, evidence, external links, attributions, and update log." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --text:#111; --muted:#555; --bg:#fff; --border:#e5e7eb; --link:#0366d6; --chip:#f3f4f6; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, Helvetica, sans-serif; line-height:1.6; color:var(--text); background:var(--bg)}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:940px; margin:0 auto; padding:28px 20px}
+    header{position:sticky; top:0; background:#fff; border-bottom:1px solid var(--border); z-index:20}
+    .hero{display:flex; align-items:center; gap:18px; padding:14px 0}
+    .avatar{width:88px; height:88px; border-radius:14px; border:1px solid var(--border); background:#f3f4f6; display:flex; align-items:center; justify-content:center; color:#9aa0a6; font-size:12px}
+    .avatar img{width:100%; height:100%; object-fit:cover; border-radius:14px}
+    .avatar.placeholder::after{content:'Your photo here';}
+    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px}
+    .btn{display:inline-block; padding:8px 12px; border:1px solid var(--border); border-radius:10px; background:#f9fafb; font-weight:600}
+    nav{display:flex; gap:14px; flex-wrap:wrap; padding:8px 0 12px}
+    nav a{font-weight:600}
+    h1{font-size:26px; margin:0}
+    h2{font-size:20px; margin:22px 0 10px}
+    .muted{color:var(--muted)}
+    .chips{display:flex; gap:8px; flex-wrap:wrap}
+    .chip{background:var(--chip); padding:6px 10px; border-radius:999px; border:1px solid var(--border); font-size:13px}
+    .grid{display:grid; gap:16px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    @media (max-width:780px){ .grid.cols-2{grid-template-columns:1fr} .project{grid-template-columns:1fr} }
+    section{padding-top:8px}
+    figure{margin:0; border:1px solid var(--border); border-radius:10px; overflow:hidden}
+    figcaption{padding:8px 10px; font-size:14px; color:var(--muted); border-top:1px solid var(--border)}
+    .k{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; padding:2px 6px; border:1px solid var(--border); border-radius:6px; background:#fafafa}
+    hr{border:none; border-top:1px solid var(--border); margin:20px 0}
+    footer{margin:18px 0 8px; font-size:14px; color:var(--muted)}
+    .note{font-size:13px; color:#666}
+    .callout{border-left:4px solid #d1e7ff; background:#f5faff; padding:10px 12px; border-radius:8px}
+    /* Project cards: left image, right text */
+    .project{border:1px solid var(--border); border-radius:10px; background:#fff; display:grid; grid-template-columns:minmax(180px,240px) 1fr; gap:14px; align-items:start}
+    .project img{width:100%; display:block}
+    .project figcaption{padding:12px 14px; border-top:none}
+    .project-title{display:block; font-weight:700; margin:2px 0 6px}
+    .project-links{margin-top:6px}
+    .project-evidence{margin-top:6px; font-size:13px; color:#666}
+      .project-thumb{aspect-ratio:16/9; width:100%; margin:10px; background:#f3f4f6; border:1px solid var(--border); border-radius:8px; padding:6px}
+    .project-thumb .ph{font-size:12px; color:#9aa0a6}
+    .project-thumb img{width:100%; height:100%; object-fit:cover; object-position:left top; display:block}
+    .btn-light{display:inline-block; padding:6px 10px; border:1px solid var(--border); border-radius:8px; background:#f3f4f6; font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <div class="avatar"><img src="assets/me.jpg" alt="Portrait of Haoran Mo" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')"></div>
+        <div>
+          <h1>Haoran Mo</h1>
+          <div>Graduate Student, <strong>The University of Manchester</strong> — MSc Robotics</div>
+          
+          <div class="btns">
+            <a class="btn" href="mailto:wcgbch@163.com">Email</a>
+            <a class="btn" href="https://github.com/q2459748466-ship-it?tab=packages" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="莫浩然-CV-Final.docx" target="_blank" rel="noopener">CV (DOCX)</a>
+            <a class="btn" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About Me</a>
+        <a href="#goals">Research Interests</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards & Honor</a>
+        <a href="#links">Links</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- ABOUT (concise profile) -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a graduate student in Robotics at The University of Manchester. I earned my bachelor's degree at Qufu Normal University.</p>
+      
+    </section>
+
+    <!-- GOALS & INTERESTS (explicitly required by brief) -->
+    <section id="goals">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Big Data</li>
+        <li>Image Processing</li>
+        <li>Robotics</li>
+        <li>VR/AR</li>
+        <li>Machine Learning</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS (chips, scannable) -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Java</span>
+        <span class="chip">C++</span>
+        <span class="chip">C#</span>
+        <span class="chip">MATLAB</span>
+        <span class="chip">Hadoop</span>
+        <span class="chip">Spark</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">ROS2</span>
+        <span class="chip">Tensorflow</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS (short, customised, with links + evidence + optional media) -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <!-- COVID Outing Advice -->
+        <figure class="project">
+          <div class="project-thumb">
+            <span class="ph">Project image</span>
+            <img src="assets/p_covid.jpg" alt="StaySafeOut — COVID Outing Advice thumbnail" onerror="this.style.display='none'">
+          </div>
+          <figcaption>
+            <span class="project-title">StaySafeOut — COVID‑19 Outing Advice Website</span>
+            <p>Mobile‑first site turning raw indicators into simple go/no‑go guidance with a transparent risk meter and a practical checklist.</p>
+            <div class="project-links"><a class="btn-light" href="assets/StaySafeOut_COVID_Outing_Advice.pdf" download>pdf</a></div>
+          </figcaption>
+        </figure>
+        
+        <!-- Auto‑Param DBSCAN -->
+        <figure class="project">
+          <div class="project-thumb">
+            <span class="ph">Project image</span>
+            <img src="assets/p_dbscan.jpg" alt="Auto‑Param DBSCAN thumbnail" onerror="this.style.display='none'">
+          </div>
+          <figcaption>
+            <span class="project-title">Auto‑Param DBSCAN & Activity Range from Map Data</span>
+            <p>Improved DBSCAN with automatic ε/minPts selection; infer human activity envelopes from location traces on map tiles.</p>
+            <div class="project-links"><a class="btn-light" href="assets/AutoParam_DBSCAN_ActivityRange.pdf" download>pdf</a></div>
+          </figcaption>
+        </figure>
+        
+        <!-- Containerised Dev Env (optional example) -->
+        <figure class="project">
+          <div class="project-thumb">
+            <span class="ph">Project image</span>
+            <img src="assets/p1.jpg" alt="Robotics sustainability study thumbnail" onerror="this.style.display='none'">
+          </div>
+          <figcaption>
+            <span class="project-title">A study on the sustainable development of robotics</span>
+            <p>A short science animation: robots for the SDGs.</p>
+            <div class="project-links"><a class="btn-light" href="https://video.manchester.ac.uk/embedded/00000000-748b-c80e-0000-019a13694f20" target="_blank" rel="noopener">links</a></div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- LINKS (at least two: GitHub / CV / LinkedIn) -->
+    <section id="awards">
+      <h2>Awards & Honor</h2>
+      <ul>
+      <li>Third-Class Scholarship, Qufu Normal University</li>
+      <li>Third Prize, Shandong Collegiate Software Design Competition</li>
+      <li>Third Prize, Lanqiao Cup Provincial Contest</li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <div class="btns">
+        <a class="btn" href="mailto:wcgbch@163.com">Email</a>
+        <a class="btn" href="https://github.com/q2459748466-ship-it?tab=packages" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="莫浩然-CV-Final.docx" target="_blank" rel="noopener">CV (DOCX)</a>
+        <a class="btn" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- ATTRIBUTIONS (avoid -15% penalty) -->
+    
+
+    <!-- UPDATE LOG (Sem 1 & Sem 2) -->
+    
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:wcgbch@163.com">wcgbch@163.com</a></p>
+      <p>GitHub: <a href="https://github.com/q2459748466-ship-it?tab=packages" target="_blank" rel="noopener">q2459748466-ship-it</a></p>
+      <p>CV: <a href="莫浩然-CV-Final.docx" target="_blank" rel="noopener">Download (DOCX)</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">linkedin.com/feed</a></p>
+    </section>
+
+    <hr>
+    <footer>Last updated: <strong>30 Oct 2025</strong></footer>
+  </main>
+</body>
+</html>
